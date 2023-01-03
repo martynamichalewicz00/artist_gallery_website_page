@@ -53,7 +53,7 @@
               ?>   <!---- its a loop [change the folder name on img path]----->                
                          <div class="lg:w-1/3 sm:w-1/2 p-4">
                         <div class="flex relative">
-                          <img alt="gallery" class="border-gray-200 w-full object-cover object-center" style="height: 260px;" src="gallery/<?php echo $file; ?>">
+                          <img alt="gallery" src="gallery/<?php echo $file; ?>">
                         </div>
                       </div>
              <?php

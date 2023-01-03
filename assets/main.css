@@ -35,13 +35,9 @@ body{
 
 .button {
     font-family: basic;
-    background-color: var(--first-color); /* Green */
-    border: none;
-    color: var(--second-color);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
   }
 
@@ -118,7 +114,8 @@ body{
 .fill:hover {
     color: var(--second-color);
   }
-  
+
+
   .fill:before {
     content: "";
     position: absolute;
@@ -142,10 +139,31 @@ p{
 .sub{
     margin-bottom: 0 !important;
 }
+
+@keyframes colors {
+	from {stroke-dashoffset: -510px;}
+   to {stroke-dashoffset: 0px;}
+}
+@keyframes animateLogoOut {
+	from {stroke-dashoffset: 0px;}
+   to {stroke-dashoffset: -510px;}
+}
 .menu img{
     width:  20em;
+    height: 20em;
+    -webkit-transform:scale(1);
+    transition: all 0.2s ease-in;
     margin: 0.1em 0.3em;
     object-fit: cover;
+    filter: grayscale(1);
+}
+
+.menu img:hover{
+  filter: grayscale(0);
+  -webkit-transform:scale(1.2);
+  margin: 2em;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 div .main-title{
