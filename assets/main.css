@@ -226,3 +226,9 @@ div.gallery {
   footer a{
     text-decoration: none;
   }
+
+  .full{
+    top: 50px;
+    scale: 2; 
+    position: absolute;
+  }
