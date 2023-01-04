@@ -1,9 +1,9 @@
 <?php
     session_start();
     error_reporting(0);
-    $dir = "gallery/";  // set your gallery folder name
-    $username = 'user';   //set ur username
-    $password = 'mypass123';   //set ur password
+    $dir = "gallery/"; 
+    $username = 'user';   
+    $password = 'mypass123';   
     if(isset($_POST['username']))
     {
         $fromuser = $_POST['username']; 

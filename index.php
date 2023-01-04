@@ -43,12 +43,12 @@
 
                
    <?php
-    $dir ="gallery/"; // image folder name
+    $dir ="gallery/"; 
       if (is_dir($dir)){
          if ($dh = opendir($dir)){
                  while (($file = readdir($dh)) !== false){
                     if($file=="." OR $file==".."){} else { 
-              ?>   <!---- its a loop [change the folder name on img path]----->                
+              ?>              
                          <div class="lg:w-1/3 sm:w-1/2 p-4">
                         <div class="flex relative">
                           <img alt="gallery" src="gallery/<?php echo $file; ?>">
@@ -60,8 +60,6 @@
          closedir($dh);
          }
       } ?>
-
-
 
       </div>
     </div>
